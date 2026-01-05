@@ -1,0 +1,87 @@
+\DocumentMetadata{
+tagging=on,
+lang=en
+}
+\documentclass[aspect-ratio=4:3]{ltx-talk}
+% \documentclass[mode = handout]{ltx-talk}
+
+\EditInstance{footer}{std}{
+  color         = black!50,
+  separator     = \hfill|\hfill,
+  element-order = {title, author, date, framenumber},
+  right-hspace  = 3mm,
+  left-hspace   = 3mm,
+}
+
+%% LOGIC 
+
+% \usepackage{miniyyc}
+
+%% MISC PACKAGES
+
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\usepackage{fontspec}
+% \usepackage{otfload}
+
+\setmainfont{Helvetica.ttc}[ 
+% Extension = {.ttc}, 
+UprightFeatures = {FontIndex=0} ,
+BoldFeatures = {FontIndex=1} ,
+ItalicFeatures = {FontIndex=2} ,
+BoldItalicFeatures = {FontIndex=3} ,
+]
+
+\usepackage{parskip}
+
+\begin{document}
+\author{}
+\title{}
+\date{\today}
+
+\begin{frame}
+	\maketitle
+\end{frame}
+
+\setlength{\parskip}{1em}
+
+\begin{frame}
+	\frametitle{overview}
+	
+
+\end{frame}
+
+	
+\end{document}
+
+
+%%  --- TRICKS ---
+
+
+%% Basic structure
+
+\begin{frame}
+	\frametitle{}
+\end{frame}	
+
+%% Some useful commands
+
+\alert{}
+\hypertarget{this-slide}{}
+\hyperlink{this-slide}{some text}
+
+%% Columns
+
+\begin{frame}
+\begin{columns}
+\begin{column}{5cm}
+Two\\lines.
+\end{column}
+\begin{column}{5cm}
+
+One line (but aligned).
+\end{column}
+\end{columns}
+\end{frame}
+
