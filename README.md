@@ -8,7 +8,7 @@ If using the GitHub CLI `gh`, I clone the template with:
 ```
 gh repo create <new-local-name> -c --private --template ltx-slides
 ```
-where “<new-local-name>” is the name of the slide deck.
+where `<new-local-name>` is the name of the slide deck.
 
 I typeset with 
 ```
