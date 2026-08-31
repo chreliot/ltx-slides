@@ -14,3 +14,4 @@ I typeset with
 ```
 latexmk -pv -lualatex *.tex
 ```
+though the template repo now includes a `.latexmkrc` file, such that no options are required.
