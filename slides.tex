@@ -2,7 +2,8 @@
 tagging=on,
 lang=en
 }
-\documentclass[aspect-ratio=4:3]{ltx-talk}
+\documentclass{ltx-talk}
+% \documentclass[aspect-ratio=4:3]{ltx-talk}
 % \documentclass[mode = handout]{ltx-talk}
 
 \EditInstance{footer}{std}{
@@ -14,17 +15,16 @@ lang=en
 }
 
 %% LOGIC 
-
 % \usepackage{miniyyc}
 
-%% MISC PACKAGES
 
+\usepackage{graphicx}
 \usepackage{enumitem}
 \usepackage{hyperref}
-
+\usepackage{csquotes}
+\usepackage{parskip}
 \usepackage{fontspec,lua-unicode-math}
 % \usepackage{otfload}
-
 \usepackage[sfdefault]{atkinson}
 
 % \setmainfont{Helvetica.ttc}[ 
@@ -35,12 +35,16 @@ lang=en
 % BoldItalicFeatures = {FontIndex=3} ,
 % ]
 
-\usepackage{parskip}
+
+\graphicspath{{graphics/}}
+% \svgpath{{svg/}}
+% \svgsetup{clean=true}
+
 
 \begin{document}
 \author{}
 \title{}
-\date{\today}
+\date{Fall \the\year}
 
 \begin{frame}
 	\maketitle
